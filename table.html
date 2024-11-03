@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <!-- <script src="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js"></script> -->
+
+    <script>
+        function showing(){
+            let result =document.querySelector("#container20");
+            var  re = document.querySelector("#login");
+            result.style.postion = "absolute";
+            result.style.top = "-0";
+
+        }
+        
+
+
+
+
+
+    </script>
+   
+</head>
+<body>
+     <div id="container20">
+        <div id="login">
+            <div id="payment">
+                <div id="first">
+                <label for="">
+                    <input type="checkbox">
+                    <i class='fab fa-cc-visa' style="color: chocolate;"></i>
+                    Debite or Credite Card
+                </label>
+            </div>
+            <div id="second">
+                <label for="">
+                    <input type="checkbox" id="ch">
+                    <i class='fab fa-paypal' style='font-size:22px;color: brown;'></i>
+                    Pay <span>Pal</span>
+                </label>
+            </div>
+            </div>
+
+            <div id="inpute1">
+                <input type="text" placeholder="First Name" >
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div id="inpute2">
+                <input type="password" placeholder="Credit Card Number" >
+                <input type="password" placeholder="Security Code">
+            </div>
+            <div id="input3">
+                <input type="date" placeholder="Card Expiration" >
+
+            </div>
+
+            <button id="btn">Submit order</button>
+        </div>
+     </div>
+     <button id="btn1" onclick="showing()">CLICK ME</button>
+</body>
+</html>

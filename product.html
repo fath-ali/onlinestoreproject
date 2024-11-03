@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js">
+    <script>
+        function counter(){
+         var add = document.getElementById('span10').innerHTML = eval(document.getElementById('span10').innerHTML)+1;
+         var sty = document.getElementById('up');
+         sty.style.color = "red";
+         if(add>10 && add<20){
+            let show = document.getElementById('span11');
+            show.style.display = "block";
+            show.style.fontSize = "1.4rem"
+            show.style.fontWeight = "bold"
+        } 
+        else if(add>21 && add<=40){
+            let show1 = document.getElementById('span11');
+            show1.style.display = "none";
+            let show2 = document.createElement('span');
+            show2.innerHTML = "M";
+            show2.style.fontSize = '1.3rem';
+            show2.style.fontWeight = "bold"
+            show2.style.position = 'absolute';
+            show2.style.top = "100%"
+            show2.style.right = "6%";
+            const parent11 = document.querySelector('.shoping');
+            parent11.replaceChild(show2,show1)
+        }
+
+        function unclick(){
+            var unadd = document.getElementById('span10').innerHTML = eval(document.getElementById('span10').innerHTML)-1;
+            var st1 = document.getElementById('up');
+            st1.style.color = "gray";
+
+
+        }
+
+    }   
+    function showing(){
+        let result =document.querySelector("#container20");
+        result.style.position = "absolute";
+        result.style.top = "-0"
+    }    
+    function remove(){
+        let result11 = document.querySelector("#container20");
+        result11.style.position = "absolute";
+        result11.style.top = "-250%";
+    }
+
+    function openpopup(){
+      let op = document.getElementById("popup");
+      op.style.position = "absolute";
+      op.style.top = "40%";
+      op.style.display = "block"
+    }
+    function closepopup(){
+      let op1 =document.getElementById("popup")
+      op1.style.position = "absolute";
+      op1.style.top = "-100%";
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <marquee behavior="" direction="">This is colifornia company</marquee>
+        <div class="header-text">
+            <a href="login.html">login</a>
+            <a href="register.html">register</a>
+        </div>
+    </header>
+    <nav>
+        <div class="logo">
+            <h1>califoronia <span>shop</span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="#">categorie</a></li>
+            <li><a href="contact.html">contanct</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+        <div class="button1">
+            <input type="url" placeholder="Search">
+            <button class="login">login</button>
+        </div>
+    </nav>
+    <section id="section">
+          <div class="section-content">
+            <h1 id="h1">califoronia products <br>up to <span id="span1">30%</span> off<h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti animi eius qui at cum vel fine thank
+                you bro.</p>
+
+            <button id="btn1">shop now</button>
+          </div>
+          <div class="images">
+            <div class="image1">
+          <img src="pictures/comuter3.png" alt="" class="image1">
+        </div>
+        <div class="image2">
+          <img src="pictures/comuter3.png" alt="" class="image2">
+        </div>
+        <div class="image3">
+          <img src="pictures/comuter3.png" alt="" class="image3">
+          </div>
+          </div>
+    </section>
+
+    <!-- ---------------product start----------------- -->
+
+       
+     <div id="container20">
+        <div id="login">
+            <div id="payment">
+                <div id="first">
+                <label for="">
+                    <input type="checkbox">
+                    <i class='fab fa-cc-visa' style="color: chocolate;"></i>
+                    Debite or Credite Card
+                </label>
+            </div>
+            <div id="second">
+                <label for="">
+                    <input type="checkbox" id="ch">
+                    <i class='fab fa-paypal' style='font-size:22px;color: brown;'></i>
+                    Pay <span>Pal</span>
+                </label>
+            </div>
+            </div>
+
+            <div id="inpute1">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div id="inpute2">
+                <input type="password" placeholder="Credit Card Number"  required>
+                <input type="password" placeholder="Security Code" required>
+            </div>
+            <div id="input3">
+                <input type="date" placeholder="Card Expiration"  required>
+
+            </div>
+
+            <div class="container21">
+                <!-- <button type="button" class="btn22" onclick="openpopup()">Submit</button> -->
+            
+                <div class="popup" id="popup">
+                  <img src="pictures/4.JPG" alt="">
+                  <h2>Thank you</h2>
+                  <p>your detail has been succefully submitted</p>
+                  <button type="button" onclick="closepopup()">OK</button>
+                </div>
+              </div>
+
+            <!-- <button id="btn">Submit order</button> -->
+            <input type="submit" value="Submit Order" id="btn" onclick="openpopup()">
+        </div>
+        <p style="position: absolute; bottom: 0;right:0;font-size: 2rem; color: white;
+        background-color: blue; width: 50px; height: 50px; border-radius: 20px; text-align: center;"  onclick="remove()">x</p>
+     </div>
+
+    <section id="section1">
+        <div class="heading1">
+        <h1>Product</h1>
+        </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/firstnet-samsung-galaxy-s20-ultra-5g.png" alt="" id="img4">
+                </div>
+                <div class="box1-content">
+                    <h1>Galaxy s20</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$230</h1>
+                        <i class='fas fa-thumbs-up' onclick="counter() " id="up" ondblclick="unclick()" ></i>
+                        <span id="span11" style="position: absolute; right: 0; top:105%; right: 7%; font-size: 1rem; 
+                        display: none;">K</span>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2" onclick="showing()">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/1-88.png" alt="" id="img2">
+            </div>
+            <div class="box1-content">
+                <h1>Galaxy S10</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$120</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2" onclick="showing()">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/iphone12.png" alt="" id="img3">
+        </div>
+        <div class="box1-content">
+            <h1>iphone12</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$500</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2" onclick="showing()">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/iphone13.png" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>iphone13 promax</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$700</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2" onclick="showing()">Buy</button>
+</div>
+         
+       </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/computer2.jpg" alt="" style="width: 90%;">
+                </div>
+                <div class="box1-content">
+                    <h1>Dell laptab</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$100</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2" onclick="showing()">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/desktop3.png" alt=""  style="width: 90%;">
+            </div>
+            <div class="box1-content">
+                <h1>HP desktop</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$400</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2" onclick="showing()">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/desktop1.jpg" alt="" style="width: 90%;">
+        </div>
+        <div class="box1-content">
+            <h1>Dell desktop</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$300</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2" onclick="showing()">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/computer5.jpg" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>hp laptab</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$200</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2" onclick="showing()">Buy</button>
+</div>
+         
+       </div>
+
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/game mouse.jpeg" alt="">
+                </div>
+                <div class="box1-content">
+                    <h1>Game Mouse</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$50</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2" onclick="showing()">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/mouse.jpg" alt="" style="width: 60%;">
+            </div>
+            <div class="box1-content">
+                <h1>Normal Mouse</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$20</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2"  onclick="showing()">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/airpad2.jpg" alt="" style="width: 70%;">
+        </div>
+        <div class="box1-content">
+            <h1>samsung Airpad</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$105</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2" onclick="showing()">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/airpad1.jpg" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>Iphone Airpad</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$1000</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2"  onclick="showing()">Buy</button>
+</div>
+         
+       </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/fan.jpg" alt="" style="width: 50%;">
+                </div>
+                <div class="box1-content">
+                    <h1>Ipad</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$100</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2" onclick="showing()">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/AC1.jpg" alt="" id="img2">
+            </div>
+            <div class="box1-content">
+                <h1>AC</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$100</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2" onclick="showing()">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/Freez.jpg" alt="" style="width: 65%;">
+        </div>
+        <div class="box1-content">
+            <h1>Fredge</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$500</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2" onclick="showing()">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/fan1.jpg" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>Fan-Original</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$140</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2">Buy</button>
+</div>
+       </div>
+<!-- ---------------------------conainer----------------------- -->
+       <div class="container1">
+
+        <div class="laptab">
+            <div class="laptab-content">
+                <h2>best laptop</h2>
+                <a href="">latest collection</a>
+                <p>cargo free</p>
+
+                <button id="btn3">shop now</button>
+            </div>
+            <div class="imag">
+                <img src="pictures/comuter3.png" alt="">
+            </div>
+            </div>
+            <div class="laptab">
+                <div class="laptab-content">
+                    <h2>best laptop</h2>
+                    <a href="">latest collection</a>
+                    <p>cargo free</p>
+    
+                    <button id="btn3">shop now</button>
+                </div>
+                <div class="imag">
+                    <img src="pictures/pngwing.com (14).png" alt="">
+                </div>
+                </div>
+        </div>
+
+    </section>
+
+        <section id="section">
+            <div class="section-content">
+              <h1 id="h1">Electronic gadget <br>up to <span id="span1">30%</span> off<h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti animi eius qui at cum vel fine thank
+                  you bro.</p>
+  
+              <button id="btn1">shop now</button>
+            </div>
+            <div class="images">
+      
+          <div class="image3">
+            <img src="pictures/pngwing.com.png" alt="" class="image3">
+      
+            </div>
+        
+            </div>
+      </section>
+
+
+      <!-- -------------------------electornic devices----------------------- -->      
+    <section id="section1">
+        <div class="heading1">
+
+        </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/firstnet-samsung-galaxy-s20-ultra-5g.png" alt="" id="img4">
+                </div>
+                <div class="box1-content">
+                    <h1>Galaxy s20</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$230</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/1-88.png" alt="" id="img2">
+            </div>
+            <div class="box1-content">
+                <h1>Galaxy S10</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$120</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/pngwing.com (16).png" alt="" id="img3" style="width: 50%;">
+        </div>
+        <div class="box1-content">
+            <h1>Robot</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$2000</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/pngwing.com (15).png" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>key board</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$700</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2">Buy</button>
+</div>
+         
+       </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/pngwing.com (14).png" alt="" style="width: 90%;">
+                </div>
+                <div class="box1-content">
+                    <h1>headphone</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$600</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/pngwing.com (13).png" alt=""  style="width: 90%;">
+            </div>
+            <div class="box1-content">
+                <h1>hand wriring</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$320</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/pngwing.com (12).png" alt="" style="width: 90%;">
+        </div>
+        <div class="box1-content">
+            <h1>Printer</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$300</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/pngwing.com (11).png" alt="">
+    </div>
+    <div class="box1-content">
+        <h1>Flash</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$30</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2">Buy</button>
+</div>
+         
+       </div>
+
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/pngwing.com (10).png" alt="">
+                </div>
+                <div class="box1-content">
+                    <h1>Sand disk</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$50</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/pngwing.com (9).png" alt="" style="width: 60%;">
+            </div>
+            <div class="box1-content">
+                <h1>power bank</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$70</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/pngwing.com (8).png" alt="" style="width: 80%;">
+        </div>
+        <div class="box1-content">
+            <h1>Brand Camera</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$70</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/pngwing.com (7).png" alt="" style="width: 50%;">
+    </div>
+    <div class="box1-content">
+        <h1>Brand Clock</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$300</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2">Buy</button>
+</div>
+         
+       </div>
+       <div class="container">
+        <div class="box1">
+                <div class="pictures">
+                <img src="pictures/pngwing.com (6).png" alt="" style="width: 90%;">
+                </div>
+                <div class="box1-content">
+                    <h1>phone S10</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="star">
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                        <i class="fas fa-star" class="star1"></i>
+                    </div>
+                    <div class="shoping">
+                        <h1>$100</h1>
+                        <i class='fas fa-thumbs-up'></i>
+                        <span id="span10">0</span>
+    
+                    </div>
+                </div>
+                <button id="btn2">Buy</button>
+                
+        </div>
+
+        <div class="box1">
+            <div class="pictures">
+            <img src="pictures/png3.png" alt="" id="img2">
+            </div>
+            <div class="box1-content">
+                <h1>Touch pad</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="star">
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                    <i class="fas fa-star" class="star1"></i>
+                </div>
+                <div class="shoping">
+                    <h1>$300</h1>
+                    <i class='fas fa-thumbs-up'></i>
+                    <span id="span10">0</span>
+
+                </div>
+            </div>
+
+              <button id="btn2">Buy</button>
+    </div>
+    <div class="box1">
+        <div class="pictures">
+        <img src="pictures/png2.png" alt="" style="width: 65%;">
+        </div>
+        <div class="box1-content">
+            <h1>Comera</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="star">
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+                <i class="fas fa-star" class="star1"></i>
+            </div>
+            <div class="shoping">
+                <h1>$20</h1>
+                <i class='fas fa-thumbs-up'></i>
+                <span id="span10">0</span>
+
+            </div>
+        </div>
+        <button id="btn2">Buy</button>
+</div>
+<div class="box1">
+    <div class="pictures">
+    <img src="pictures/png1.png" alt="" style="width: 40%;"> 
+    </div>
+    <div class="box1-content">
+        <h1>masurment</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="star">
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+            <i class="fas fa-star" class="star1"></i>
+        </div>
+        <div class="shoping">
+            <h1>$110</h1>
+            <i class='fas fa-thumbs-up'></i>
+            <span id="span10">0</span>
+
+        </div>
+    </div>
+    <button id="btn2">Buy</button>
+</div>
+       </div>
+
+       <div class="freeshoping">
+        <div class="freebox1">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="free-content">
+                <h1>free shoping</h1>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+
+        <div class="freebox2">
+            <i class='fab fa-accessible-icon'></i>
+            <div class="free-content1">
+                <h1>free return</h1>
+                <p>Lorem, ipsum dolor sit.</p>
+            </div>
+        </div>
+        <div class="freebox2">
+            <i class='fas fa-ambulance'></i>
+            <div class="free-content1">
+                <h1>fast delivery</h1>
+                <p>world wide</p>
+            </div>
+        </div>
+        
+        <div class="freebox2">
+            <i class='fas fa-thumbs-up'></i>
+            <div class="free-content1">
+                <h1>big choice</h1>
+                <p>Lorem, ipsum dolor sit.</p>
+            </div>
+        </div>
+        
+       </div>
+
+       <div class="subscribe">
+        <h1>subscribe to the califoronia shop for latest upload</h1>
+        <div class="subscribe-box">
+            <input type="email" placeholder="Enter Your Email">
+            <button id="btn4">subscribe</button>
+        </div>
+       </div>
+       </section>
+
+
+       <!-- footer------------------------ -->
+
+       <footer>
+        <div class="shop">
+            <h1>colifornia shop</h1>
+            <ul>
+                <li>Dubi</li>
+                <li>Kabul</li>
+                <li>iran</li>
+                <li>turkey</li>
+                <li>afghanistan</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h2>our links</h2>
+            <ul>
+                <li>home</li>
+                <li>product</li>
+                <li>categories</li>
+                <li>contanct</li>
+                <li>about</li>
+            </ul>
+        </div>
+        <div class="services">
+            <h3>our services</h3>
+            <ul>
+                <li>computer</li>
+                <li>car</li>
+                <li>color</li>
+                <li>woood</li>
+                <li>phone</li>
+            </ul>
+        </div>
+        <div class="social">
+            <h4>follow on social-media</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Placeat quam laborum fuga impedit 
+                modi ipsa .</p>
+            <div class="social-icon">
+                <i class="fas fa-brands fa-facebook" id="star"></i>
+                <i class="fas fa-brands fa-twitter" id="star"></i>
+                <i class="fas fa-brands fa-google" id="star"></i>
+                <i class="fas fa-brands fa-instagram" id="star"></i>
+                <i class="fas fa-brands fa-youtube" id="star"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    height: 100px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(64,7, 64);
+}
+header{
+    width: 100%;
+    height: 3.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+marquee{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    padding-top: 10px;
+    text-overflow:clip;
+    animation-name: marker;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes marker{
+    10%,
+    20%{
+        color: red;
+    }
+    21%,
+    40%{
+        color: blue;
+        
+    }
+    50%,
+    60%{
+        color: aqua;
+        transform: rotate(3deg);
+    }
+    70%,
+    100%{
+        color: brown;
+    }
+}
+.header-text{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-transform: capitalize;
+    justify-content: right;
+    padding-right: 30px;
+}
+.header-text a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header-text a:active{
+    color: blue;
+}
+.header-text a:visited{
+    color: darkgreen;
+}
+.header-text a:hover{
+    color:rgba(200, 100, 200, 0.3);
+}
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color:rgb(64,7, 64);
+    align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+}
+.logo{
+    /* background-color: blue; */
+    width: 22%;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family:monospace;
+    position: absolute;
+    left: 0;
+  
+}
+.logo h1{
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: white;
+}
+.logo h1::first-letter{
+    color: gold;
+    width: 100%;
+    height: 200px;
+}
+.logo span{
+    color:gold;
+}
+ul{
+    width: 50%;
+    height:4rem;
+    margin-left: 10%;
+    display: flex;
+    /* background-color:red; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10%;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: all ease-in-out 1s;
+
+}
+li a:hover{
+    color: aqua;
+}
+.button1{
+    width: 30%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    /* background-color: red; */
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+}
+.search{
+    width:50%;
+    height: 37px;
+    border-radius: 200px;
+    border: none;
+    font-size: 1.10rem;
+    padding-left: 10px;
+    position: relative;
+    bottom: 6px;
+}
+.login{
+    width: 140px;
+    height: 37px;
+    background-color:goldenrod;
+    font-size: 1.4rem;
+    border-radius: 200px;
+    color: white;
+}
+#section1{
+    width: 100%;
+    height: 90vh;
+}
+.container{
+    width: 60%;
+    height: 70vh;
+    box-shadow: 0px 0px 20px rgb(184, 179, 179);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+}
+.container-content{
+    width: 40%;
+    background-color:rgb(64,7, 64);
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+
+}
+.container-content h1{
+    font-size: 2.4rem;
+    color: gold;
+    text-transform: capitalize;
+    padding-top:40%;
+}
+.acount-login{
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: red; */
+    flex-grow: 3;
+}
+.content{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30px;
+}
+.content h1{
+    color: rgb(226, 193, 3);
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+.content p{
+    padding-top: 5px;
+    text-wrap: nowrap;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login-page{
+    display: flex;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* outline: none; */
+}
+.login-page input{
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    border-bottom-width: 3px;
+    text-transform: capitalize;
+    width: 45%;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+.buttom-text{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    width: 80px;
+    height: 30px;
+    background-color:gold;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+.buttom-text p{
+    font-size: 1.3rem;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.buttom-text p a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.container-down{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 60px;
+}
+.container-down h1{
+    font-size: 1.10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+input{
+    margin-top: 16px;
+}
+.url1{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.submit1{
+    width: 150px;
+    height: 30px;
+    background-color: gold;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border: none;
+    transition: all ease-in-out 500ms;
+}
+.submit1:hover{
+    transform: rotate(10deg);
+    background-color: blue;
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color:rgb(64,7, 64);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+}
+.shop h1{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.shop ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.shop ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+}
+.shop ul li:hover{
+    color:green
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links h2{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    padding-left: 80px;
+}
+.links ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+
+}
+.links ul li:hover{
+    color: olivedrab;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+}
+.services h3{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.services ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    padding-left: 80px;
+}
+.services ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+}
+.services ul li:hover{
+    color: green;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social h4{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    padding-right: 110px;
+}
+.social p{
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.social-icon{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+#star{
+    color: rgb(140, 226, 140);
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+}
+#star:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 10px 100px 100px 10px aqua;
+}

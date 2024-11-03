@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    height: 100px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(64,7, 64);
+}
+header{
+    width: 100%;
+    height: 3.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+marquee{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    padding-top: 10px;
+    text-overflow:clip;
+}
+.header-text{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-transform: capitalize;
+    justify-content: right;
+    padding-right: 30px;
+}
+.header-text a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header-text a:active{
+    color: blue;
+}
+.header-text a:visited{
+    color: darkgreen;
+}
+.header-text a:hover{
+    color:rgba(200, 100, 200, 0.3);
+}
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color:rgb(64,7, 64);
+    align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+}
+.logo{
+    width: 22%;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family:monospace;
+    position: absolute;
+    left: 0;
+  
+}
+.logo h1{
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    color: white;
+}
+.logo h1::first-letter{
+    color: gold;
+    width: 100%;
+    height: 200px;
+}
+.logo span{
+    color:gold;
+}
+ul{
+    width: 50%;
+    height:4rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10%;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: all ease-in-out 1s;
+
+}
+li a:hover{
+ color: aqua;
+}
+.button1{
+    width: 30%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+}
+.button1 input{
+    width:50%;
+    height: 37px;
+    border-radius: 200px;
+    border: none;
+    font-size: 1.10rem;
+    padding-left: 10px;
+
+}
+.login{
+    width: 140px;
+    height: 37px;
+    background-color:goldenrod;
+    font-size: 1.4rem;
+    border-radius: 200px;
+    color: white;
+}
+#section{
+    width: 100%;
+    height: 150vb;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+#section h1{
+    padding-left: 15%;
+    padding-top: 20px;
+    color: gold;
+    font-size: 2.7rem;
+    font-family: monospace;
+}
+.text{ 
+    width: 80%;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    /* padding-left: 1%; */
+    line-height: 30px;
+    margin-left: 15%;
+
+}
+.text p{
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.container{
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+.image img{
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.text1{
+    padding-left: 15%;
+    padding-top: 30px;
+    line-height: 30px;
+}
+.text1 p{
+    padding-right: 7%;
+    text-transform: capitalize;
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+}
+#btn5{
+    width: 20%;
+    height: 30px;
+    background-color:rgb(64,7, 64);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.container1{
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+.box i{
+    font-size: 40px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.content h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: monospace;
+}
+.content p{
+    font-family: monospace;
+}
+
+.subscribe{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.subscribe-box{ 
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.subscribe-box input{
+    width: 20%;
+    height: 35px;
+    color: gray;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding-left: 20px;
+
+}
+#btn4{
+    width: 10%;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: gold;
+    color: white;
+    border: none;
+}
+
+/* ----------------------footer---------------------- */
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color:rgb(64,7, 64);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+}
+.shop h1{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.shop ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.shop ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+}
+.shop ul li:hover{
+    color:green
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links h2{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    padding-left: 80px;
+}
+.links ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+
+}
+.links ul li:hover{
+    color: olivedrab;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+}
+.services h3{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.services ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 40px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    padding-left: 80px;
+}
+.services ul li{
+    font-size: 1.10rem;
+    text-align: justify;
+}
+.services ul li:hover{
+    color: green;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social h4{
+    text-transform: capitalize;
+    color: gold;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    padding-right: 110px;
+}
+.social p{
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.social-icon{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+#star{
+    color: rgb(140, 226, 140);
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+}
+#star:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 10px 100px 100px 10px aqua;
+}
+
+

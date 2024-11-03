@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js">
+    <script>
+        function pageload(){
+            ///
+        }
+        function addperson(){
+            let textname = document.getElementById('textName').value;
+            let user = document.getElementById("textuserName").value;
+            let phone = document.getElementById("textphone").value;
+            let email = document.getElementById("emailtext").value;
+            let pass = document.getElementById("passtext").value;
+            let person = document.createElement("tr");
+
+            let text1 = document.createElement("td");
+            let textnode = document.createTextNode(textname);
+            text1.appendChild(textnode);
+
+            let user1 = document.createElement("td");
+            let usernode = document.createTextNode(user);
+            user1.appendChild(usernode);
+
+            let phon1 = document.createElement("td");
+            let phonnode = document.createTextNode(phone);
+            phon1.appendChild(phonnode);
+
+            let email1 = document.createElement("td");
+            let emailnode = document.createTextNode(email);
+            email1.appendChild(emailnode);
+
+            let pass1 = document.createElement("td");
+            let passnode = document.createTextNode(pass);
+            pass1.appendChild(passnode);
+
+            let delink =document.createElement('a');
+             delink.innerHTML = "Delete";
+             delink.style.width = "70%";
+             delink.style.border = "2px";
+             delink.style.fontSize = "1.4rem"
+             delink.style.color = "red";
+             delink.style.textDecoration = "none"
+             delink.href = "#";
+             delink.setAttribute('id',"h20")
+             delink.onclick = function(){delperson(event)}
+         
+            let editLink = document.createElement('a') ;
+            editLink.innerHTML = "Edite";
+             editLink.style.width = "70%";
+             editLink.style.height = "50px";
+             editLink.style.fontSize = "1.4rem"
+             editLink.style.textDecoration = "none";
+             editLink.style.color = "blue";
+             editLink.href = "#";
+
+            // delink.onclick = function(){edperson(person)}
+            
+             let sep =document.createTextNode("----");
+
+
+             let oper = document.createElement("td");
+             oper.appendChild(delink);
+             oper.appendChild(sep);
+             oper.appendChild(editLink);
+            
+
+
+            person.appendChild(text1);
+            person.appendChild(user1);
+            person.appendChild(phon1);
+            person.appendChild(email1);
+            person.appendChild(pass1);
+            person.appendChild(oper)
+
+            document.getElementById("tabel1").appendChild(person);
+        }
+        function delperson(e){
+          let person = e.srcElement.parentNode.parentNode;
+          document.getElementById("tabel1").removeChild(person);  
+        }
+       
+        // function edperson(person){
+        //     person.style.backgroundColor = "red";
+        //     person.style.color = "white";
+        //     document.getElementById("textName").value = person.chilNodes[0].innerHTML;
+        //     document.getElementById("textuserName").value = person.chilNodes[1].innerHTML;
+        //     document.getElementById("textphon").value = person.chilNodes[2].innerHTML;
+        //     document.getElementById("emailtext").value = person.chilNodes[3].innerHTML;
+        //     document.getElementById("passtext").value = person.chilNodes[4].innerHTML;
+
+        // }
+        function show(){
+             var result = document.getElementById("container1");
+             result.style.position  = "absolute"
+             result.style.top = "-0%";
+
+        }
+        function closeform(){
+            var show1 = document.getElementById("container1");
+            show1.style.position = "absolute";
+            show1.style.top = "-100%";
+        }
+    </script>
+</head>
+<body onload="pageload()">
+    <header>
+        <marquee behavior="" direction="">This is colifornia company</marquee>
+        <div class="header-text">
+            <a href="login.html">login</a>
+            <a href="register.html">register</a>
+        </div>
+    </header>
+    <nav>
+        <div class="logo">
+            <h1>califoronia <span>shop</span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="#">categorie</a></li>
+            <li><a href="contact.html">contanct</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+        <div class="button1">
+            <input type="url" placeholder="Search" class="search">
+            <button class="login">login</button>
+        </div>
+    </nav>
+
+    <section id="section1">
+        <div class="container">
+            <div class="container-content">
+                <h1>register</h1>
+            </div>
+            <div class="acount-login">
+                <div class="content">
+                    <h1>create acount</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, error.</p>
+                </div>
+                <div class="login-page">
+                    <div class="inputed">
+                    <input type="text" placeholder="Enter name" class="input1" id="textName">
+                    <input type="text" placeholder="User name" class="input1" id="textuserName">
+                    </div>
+                    <div class="inputed">
+                    <input type="number" placeholder="phone" class="input2" id="textphone">
+                    <input type="email" placeholder="email" class="input2" id="emailtext">
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="password" id="passtext">
+                    </div>
+                </div>
+                <div class="buttom-text">
+                    <input type="button" value="Register" style="width: 150px; height: 30px; background-color: rgb(64,7, 64);
+                    color: white; font-size: 1.2rem;" onclick="addperson()">
+                    <!-- <button id="btn1" onclick="addperson()">Create Acount</button> -->
+                    <p>forget password <a href="">click</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-down">
+            <h1>subscribe to the colifornia shop for latest upload</h1>
+            <div class="box1">
+                <input type="email" placeholder="Enter your email" class="url1">
+                <input type="submit" value="subscribe" class="submit1">
+            </div>
+        </div>
+
+        <div id="container1">
+            <table id="tabel1">
+                <tr>
+                    <th>Name</th>
+                    <th>UserName</th>
+                    <th>Number</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Operation</th>
+                </tr>
+        
+        
+                <div class="icon20">
+                    <i id="form-close"  onclick="closeform()">X</i>
+                </div>
+            </table>
+            </div>
+        
+            <!-- <button id="btn1" onclick="show()">click to show</button> -->
+            <i class='far fa-user' style='font-size:24px' id="btn1" onclick="show()"></i>
+
+    </section>
+    <footer>
+        <div class="shop">
+            <h1>colifornia shop</h1>
+            <ul>
+                <li>Dubi</li>
+                <li>Kabul</li>
+                <li>iran</li>
+                <li>turkey</li>
+                <li>afghanistan</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h2>our links</h2>
+            <ul>
+                <li>home</li>
+                <li>product</li>
+                <li>categories</li>
+                <li>contanct</li>
+                <li>about</li>
+            </ul>
+        </div>
+        <div class="services">
+            <h3>our services</h3>
+            <ul>
+                <li>computer</li>
+                <li>car</li>
+                <li>color</li>
+                <li>woood</li>
+                <li>phone</li>
+            </ul>
+        </div>
+        <div class="social">
+            <h4>follow on social-media</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Placeat quam laborum fuga impedit 
+                modi ipsa .</p>
+            <div class="social-icon">
+                <i class="fas fa-brands fa-facebook" id="star"></i>
+                <i class="fas fa-brands fa-twitter" id="star"></i>
+                <i class="fas fa-brands fa-google" id="star"></i>
+                <i class="fas fa-brands fa-instagram" id="star"></i>
+                <i class="fas fa-brands fa-youtube" id="star"></i>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
